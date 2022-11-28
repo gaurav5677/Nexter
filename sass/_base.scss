@@ -36,3 +36,12 @@ body {
     font-weight: 300;
     line-height: 1.6;
 }
+
+.container{
+
+    display: grid;
+    grid-template-rows:  80vh  min-content 40vw repeat(3, min-content); 
+    // the 2Nd row will change it self according to the content present  in the row 
+    //3rd 40vw  is the width related to the viewport
+    
+}
