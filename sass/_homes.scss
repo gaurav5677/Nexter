@@ -15,34 +15,48 @@
 
 .home {
    background-color: $color-grey-light-1;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
 
    &__img {
       width: 100%;
+      grid-column: 1/-1;
    }
 
    &__like {
       width: 100%;
+      grid-row: 1/2;
+      grid-column: 2 /3;
+      fill: $color-primary;
+      height: 2rem;
+      width: 2rem; 
    }
 
    &__name {
       width: 100%;
+
+      grid-column: 1/-1;
    }
 
-   &__rooms, 
+   &__rooms,
    &__location,
    &__area,
-   &__price{
+   &__price {
 
-      svg{
+      svg {
          fill: $color-primary;
          height: 2rem;
          width: 2rem;
-   
-      }
-      p{
 
       }
+
+      p {}
    }
 
+
+   &__btn {
+
+      grid-column: 1/-1;
+   }
 
 }
